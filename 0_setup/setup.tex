@@ -1,0 +1,45 @@
+\documentclass[8pt, a4paper, landscape]{extarticle}
+\usepackage[top=0.1cm, bottom=0.01cm, left=0.1cm, right=0.1cm, landscape]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath, amsfonts, physics, empheq}
+\usepackage{import}
+\usepackage[normalem]{ulem}
+\usepackage[ngerman]{babel}
+\usepackage{wallpaper}
+\usepackage{changepage}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{pbox}
+\tcbuselibrary{breakable}
+\usepackage{romannum}
+\usepackage{textcomp} % gensymb dependency
+\usepackage{gensymb} % Degree celcius symbol
+\usepackage{pdfpages}
+\usepackage[export]{adjustbox}
+
+% packages needed for encircled enumeration
+    % \usepackage{enumitem} 
+    % \usepackage{tikz}
+
+% styling
+    % set custom color
+    \def \customColor {NavyBlue}
+    % get rid of indentation after \par
+    \setlength{\parindent}{0cm}
+
+    % set font style
+    \renewcommand{\familydefault}{\sfdefault}
+
+    % column seperator
+    \setlength\columnsep{0.5mm}
+	\setlength{\columnseprule}{0pt}
+
+% Background
+    % \CenterWallPaper{1}{setup/background.pdf}
+
+% custom commands
+\input{0_setup/newcommands.tex}
+
+% adjusted commands
+\input{0_setup/renewcommands.tex}

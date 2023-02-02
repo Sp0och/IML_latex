@@ -1,0 +1,110 @@
+% circled numbers for enumeration
+% \newcommand*\circled[1]{
+%     \tikz[baseline=(char.base)]{
+%         \node[shape=circle,draw,inner sep=1.2pt] (char) {#1};
+%     }
+% }
+
+% nice looking integral in inline math mode
+% PRE: #1 lower boundary
+%      #2 upper boundary
+    % \newcommand{\inti}[2]{
+    %     \displaystyle{\int_{#1}^{#2}}
+    % }
+
+% vector absolute value ||v||
+% PRE: #1 expression
+    % \newcommand{\Verti}[1]{
+    %     \Vert #1 \Vert
+    % }
+    
+% signum function
+    % \newcommand{\sgn}{
+    %     \mathop{\mathrm{sgn}}
+    % } 
+    
+% mathbox around math statements
+% PRE: #1 math expression
+    \newcommand{\mathbox}[1]{
+        \vskip3pt
+        \begin{center}
+            \boxed{
+                #1
+            }
+        \end{center}
+        \vskip4pt
+    }
+
+% box around text 4col
+% PRE: #1 text
+% Additional comment: 0.2345 is a hardcoded relation which holds
+%                     only for a four-column enviroment. (pbox auto-shrinks)
+\newcommand{\textbox}[1]{
+    \vskip4pt
+    \begin{center}
+        \fbox{\pbox{0.2345\textwidth}{
+            #1
+        }}
+    \end{center}
+    \vskip4pt
+}
+    
+% boxed picture
+% PRE: #1(opt) picture size in relation to \linewidth, in (0,1], default: 0.9
+%      #2 absolute picture path
+    \newcommand{\boxGraphic}[2][0.9]{
+        {
+        \vskip4pt
+        \begin{center}
+        \setlength{\fboxsep}{0pt}%
+        \setlength{\fboxrule}{0.2pt}%
+        \fbox{\includegraphics[width={#1}\linewidth]{#2}}
+        \end{center}
+        \vskip4pt
+        }
+    }
+    
+% document info
+% PRE: #1 Title
+%      #2 Subtitle
+
+    % \newcommand{\DocumentInfo}[2]{
+    %     \begin{tcolorbox}[
+    % 		arc=1mm, 
+    %         colback = \customColor!30,
+    %         colframe = \customColor,
+    % 		boxrule=0pt,
+    % 		toptitle=1mm,
+    % 		bottomtitle=1mm,
+    % 		right=0mm,
+    % 		left=0mm,
+    % 		fontupper=\color{white},
+    % 		after skip = 0 mm,
+    % 		top=0.1mm,
+    % 		bottom=0mm,
+    %         title= \huge \center \textbf{#1} \par \large \vskip1mm #2 \par \vskip1mm \small 	Version: \today
+    %     ]	
+    %     \end{tcolorbox}
+    % }
+    \newcommand{\DocumentInfo}[3][]{
+        \begin{tcolorbox}[
+    		arc=1mm, 
+            colback = \customColor,
+            colframe = \customColor,
+    		boxrule=0pt,
+    		toptitle=1mm,
+    		bottomtitle=1mm,
+    		right=0mm,
+    		left=0mm,
+    		fontupper=\color{white},
+    		after skip = 0 mm,
+    		top=0.1mm,
+    		bottom=0mm,
+            title= \huge \center \textbf{#2} \par \large \vskip1mm #3 \par \vskip1mm \small 	Version: \today
+        ]	
+        \begin{center}
+            #1
+        \end{center}
+        \end{tcolorbox}
+    }
+   

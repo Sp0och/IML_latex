@@ -1,0 +1,45 @@
+% bullet point (same as in itemize)
+    \renewcommand{\textbullet}{
+        \ensuremath{\bullet}
+    }
+
+% section title
+    \renewcommand{\section}[1]{
+        \begin{tcolorbox}[
+            arc=.5mm, % corner radius
+            colback=\customColor, % background color
+            boxrule=0pt, % border box
+            valign=center, % vertically center title
+            height=5mm,
+            left=0.2mm,
+            after skip = 0.1mm, % if 0 box collapses
+            before skip = 1mm,
+            fontupper=\color{white}
+        ]
+        \textbf{#1}
+        \end{tcolorbox}
+    }
+
+% subsection title
+    \renewcommand{\subsection}[2]{
+        \begin{tcolorbox}[
+            arc=.5mm,
+            colback=\customColor!30,
+            boxrule=0pt,
+            valign=center,
+            left=0.2mm,
+            right=0.2mm,
+            top=0mm,
+            bottom=0.5mm,
+            before skip = 0mm,
+            after skip = 1.4mm,
+            fontupper=\color{black}
+        ]
+            \textbf{\small#1}
+        \end{tcolorbox}
+        \begin{adjustwidth}{1mm}{1mm}
+            \small
+            #2
+            \vspace{0.5mm}
+        \end{adjustwidth}
+    }
