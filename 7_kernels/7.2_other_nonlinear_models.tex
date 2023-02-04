@@ -1,0 +1,18 @@
+\subsection{Other Nonlinear Models}
+
+\textbf{K Nearest Neighbours}
+\begin{itemize}
+    \item For each datapoint determine the k nearest neighbours and assign a class based on the majority of the there present datapoints.
+    \item Heavily dependent on k $\Rightarrow$ Cross Validation
+    \item Error prone in high dim. because of large distances
+    \item Needs a lot of data but $\mathcal{O}(nd)$ can be reduced to $\mathcal{o}(n^p),p<1$ if we allow for some error probability
+\end{itemize}
+\textbf{Decision Trees}
+\begin{itemize}
+    \item At each node split data w.r.t. to one feature and a threshold (boundary at $x_i > t_i$)
+    \item Each node returns class of the subset by majority
+    \item Greedy Method: best step for current situation as opposed to generally best step $\Rightarrow$ errors propagate.
+    \item Very prone to overfitting as partitions can get very detailed
+    \item $\Rightarrow$ random forest (averaged result over trees with random splits.)
+\end{itemize}
+

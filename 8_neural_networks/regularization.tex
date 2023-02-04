@@ -1,0 +1,20 @@
+\subsection{Regularization in NNs}
+
+\begin{itemize}
+    \item Early stopping (before convergence to lowest training error)
+    \item Dropout: deactivate about 50\% of the nodes during training
+    \item Data augmentation
+    \item Batch normalization
+\end{itemize}
+
+\textbf{Batch normalization}
+
+Normalize unit activations for a layer.
+
+BN($v,\gamma,\beta$)
+\begin{itemize}
+    \item $\mu_s = \frac{1}{|S|}\sum_{i\in S}v_i$
+    \item $\sigma_S^2 = \frac{1}{|S|}\sum{i\in S}(v_i - \mu_S)^2$
+    \item $\hat{v}_i = \frac{v_i - \mu_S}{\sqrt{\sigma_S^2} + \epsilon}$
+    \item Scale and shift: $\bar{v}_i = \gamma\hat{v}_i + \beta$
+\end{itemize}

@@ -1,0 +1,12 @@
+\subsection{Vanishing / Exploding Gradient}
+
+\textbf{Vanishing Gradient}
+
+In Backprop. the weight updates depend on the gradients of preceeding weights. If the gradients are small (e.g. saturation in sigmoid) then the small gradients further shrink the update and for large networks the gradient of certain layers vanish.
+
+\textbf{Exploding Gradient}
+
+Similarly as for vanishing gradient but with big gradients. Mostly due to bad weight initialization.
+
+\textbf{Counteractions}
+Good weight initialization is half the work. Secondly for the vanishing gradient problem a relu function can be useful as for that we don't have the saturation problem.
