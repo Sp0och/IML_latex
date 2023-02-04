@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  2 FEB 2023 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  4 FEB 2023 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -686,28 +686,51 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `TS1/cmss/b/n' undefined
-(Font)              using `TS1/cmss/m/n' instead on input line 14.
+(Font)              using `TS1/cmss/m/n' instead on input line 16.
 
-) (/Users/lfierz/arbeiten/Latex/IML/2_linear_regression/linear_regression.tex) (/Users/lfierz/arbeiten/Latex/IML/3_svm/svm.tex) (/Users/lfierz/arbeiten/Latex/IML/4_gradient_descent_and_convexity/gd_and_convexity.tex) (/Users/lfierz/arbeiten/Latex/IML/5_model_selection/model_selection.tex) (/Users/lfierz/arbeiten/Latex/IML/6_classification/classification.tex) (/Users/lfierz/arbeiten/Latex/IML/7_kernels/kernels.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/nns.tex) (/Users/lfierz/arbeiten/Latex/IML/9_clustering/clustering.tex) (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/dimensionality_reduction.tex) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/statistical_perspective.tex) (/Users/lfierz/arbeiten/Latex/IML/12_generative_modelling/generative_modelling.tex) (/Users/lfierz/arbeiten/Latex/IML/13_gmm/gmm.tex) (/Users/lfierz/arbeiten/Latex/IML/additionals/additionals.tex) [1
+) (/Users/lfierz/arbeiten/Latex/IML/2_linear_regression/linear_regression.tex (/Users/lfierz/arbeiten/Latex/IML/2_linear_regression/2.1closed_solution.tex) (/Users/lfierz/arbeiten/Latex/IML/2_linear_regression/2.2optimization.tex) (/Users/lfierz/arbeiten/Latex/IML/2_linear_regression/2.3nonlinear_regression.tex) (/Users/lfierz/arbeiten/Latex/IML/2_linear_regression/2.4_regularization.tex
+<images/lasso_vs_ridge.png, id=4, 1405.25pt x 789.95125pt>
+File: images/lasso_vs_ridge.png Graphic file (type png)
+<use images/lasso_vs_ridge.png>
+Package pdftex.def Info: images/lasso_vs_ridge.png  used on input line 32.
+(pdftex.def)             Requested size: 1405.24658pt x 789.94931pt.
+)) (/Users/lfierz/arbeiten/Latex/IML/3_gradient_descent_and_convexity/gd_and_convexity.tex (/Users/lfierz/arbeiten/Latex/IML/3_gradient_descent_and_convexity/3.1gradient_descent.tex) (/Users/lfierz/arbeiten/Latex/IML/3_gradient_descent_and_convexity/3.2convexity.tex)) (/Users/lfierz/arbeiten/Latex/IML/4_model_selection/model_selection.tex (/Users/lfierz/arbeiten/Latex/IML/4_model_selection/4.1_bias_variance.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/lfierz/arbeiten/Latex/IML/IML.aux)
+ []
+
+) (/Users/lfierz/arbeiten/Latex/IML/4_model_selection/4.2_cross_validation.tex [1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/lfierz/arbeiten/Latex/IML/images/lasso_vs_ridge.png (PNG copy)>]) (/Users/lfierz/arbeiten/Latex/IML/4_model_selection/4.3_dataset.tex)) (/Users/lfierz/arbeiten/Latex/IML/5_classification/classification.tex (/Users/lfierz/arbeiten/Latex/IML/5_classification/5.3_losses.tex)) (/Users/lfierz/arbeiten/Latex/IML/6_svm/svm.tex
+<images/SVM.png, id=31, 670.505pt x 473.77pt>
+File: images/SVM.png Graphic file (type png)
+<use images/SVM.png>
+Package pdftex.def Info: images/SVM.png  used on input line 4.
+(pdftex.def)             Requested size: 670.50337pt x 473.76884pt.
+) (/Users/lfierz/arbeiten/Latex/IML/7_kernels/kernels.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/nns.tex) (/Users/lfierz/arbeiten/Latex/IML/9_clustering/clustering.tex) (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/dimensionality_reduction.tex) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/statistical_perspective.tex) (/Users/lfierz/arbeiten/Latex/IML/12_generative_modelling/generative_modelling.tex) (/Users/lfierz/arbeiten/Latex/IML/13_gmm/gmm.tex) (/Users/lfierz/arbeiten/Latex/IML/additionals/additionals.tex (/Users/lfierz/arbeiten/Latex/IML/additionals/a.1_standardization.tex) (/Users/lfierz/arbeiten/Latex/IML/additionals/a.2_classification_evaluation.tex
+<images/ROC.png, id=33, 220.825pt x 220.825pt>
+File: images/ROC.png Graphic file (type png)
+<use images/ROC.png>
+Package pdftex.def Info: images/ROC.png  used on input line 27.
+(pdftex.def)             Requested size: 220.82445pt x 220.82445pt.
+)) [2 </Users/lfierz/arbeiten/Latex/IML/images/SVM.png> </Users/lfierz/arbeiten/Latex/IML/images/ROC.png>] (/Users/lfierz/arbeiten/Latex/IML/IML.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17617 strings out of 480608
- 338641 string characters out of 5903631
- 615765 words of memory out of 5000000
- 33042 multiletter control sequences out of 15000+600000
- 542383 words of font info for 60 fonts, out of 8000000 for 9000
+ 17705 strings out of 480608
+ 341852 string characters out of 5903631
+ 632713 words of memory out of 5000000
+ 33089 multiletter control sequences out of 15000+600000
+ 543265 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,77p,882b,584s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on /Users/lfierz/arbeiten/Latex/IML/IML.pdf (1 page, 184466 bytes).
+ 62i,10n,77p,882b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on /Users/lfierz/arbeiten/Latex/IML/IML.pdf (2 pages, 387399 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

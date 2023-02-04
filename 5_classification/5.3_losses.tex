@@ -1,0 +1,32 @@
+\subsection{Loss Functions}
+
+\begin{itemize}
+    \item Cross Entropy: \\$\mathcal{L}^{CE} = -\left[y'log\hat{f}(x)' + (1-y')log(1-\hat{f}(x)')\right]$\\
+    Where $y' = \frac{1+y}{2}$ and $\hat{f}(x)' = \frac{1+\hat{f}(x)}{2}$
+    \item Zero one loss: $\mathbb{L}^{0/1} = \mathbb{I}\{sign(\hat{f}(x) \neq y)\}$\\
+    Not convex nor continuous $\Rightarrow$ surrogate logistic loss 
+    \item $\mathbb{L}^{\text{Hinge}
+    } = \text{max}(0,1-y\hat{f}(x))$
+    \item $\mathbb{L}^{\text{percep}} = \text{max}(0, - y\hat{f}(x))$
+    \item $\mathbb{L}^{\text{logistic}} = log(1 + exp(-y\hat{f}(x)))$
+    \columnbreak\vfill
+    \item multidim. logistic loss: softmax: \\
+    $\mathbb{L}^{\text{softmax}}_i = \frac{e^{-af_i}}{\sum_{j=1}^{K}e^{-af_j}}$
+    \item $\mathbb{L}^{\text{exp}}(x)_i = exp(-y\hat{f}(x))$
+\end{itemize}
+
+GD on logistic loss:\\
+$\omega_{t+1} = \omega_t - \eta \frac{1}{n}\sum_{i=1}^n\nabla_\omega g(y\langle\omega_t,x\rangle) = \\\omega_t + \eta_t \frac{1}{n}\sum_{i=1}^n\frac{y_ix_i}{1+e^{y_i\omega_tx_i}}$ Converges to the $\omega$ that minimizes the l2-distance to the decision boundary (SVM sol.)
+
+If classification error is not equally high for different classes $\Rightarrow$ error metrics (see additionals)
+
+\textbf{Worst group error}(related to group fairness): Highest error among all clusters of a class (e.g. if one blob is 100\% false)
+
+\textbf{Robust generalization w.r.t. perturbations}
+
+Data augmentation, models that allow for invariance (e.g. CNNs)
+
+\textbf{Distribution shifts} aka test data is different to training data: try to have the lowest possible error on the test samples that are similar to the training data.
+
+
+

@@ -1,0 +1,11 @@
+In general $y = f(x) + \epsilon$, where $\epsilon$ is random noise
+
+We can never know $f(x)$ as we can only observe y. So we can't determine the estimation error $(f(x) - \hat{f}(x))^2$
+
+We use the gen. error $(y-\hat{f}(x))^2 =$ \\$\underbrace{(f(x) - \hat{f}(x))^2}_{\text{estimation error}}$ $+ \underbrace{\epsilon^2}_{\text{irreducible noise}} - \underbrace{2\epsilon(\hat{f}(x - f(x)))}_{0 \text{ on average}}$
+
+Often interested in $\mathbb{E}\left[(y-\hat{f}(x))^2\right] \approx \underbrace{\frac{1}{n}\sum_{i=1}^n (y_i-\hat{f}(x_i))^2}_{\text{empirical error}}$
+
+\input{4_model_selection/4.1_bias_variance.tex}
+\input{4_model_selection/4.2_cross_validation.tex}
+\input{4_model_selection/4.3_dataset.tex}

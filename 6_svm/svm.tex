@@ -1,0 +1,28 @@
+\begin{center}
+    \resizebox{0.6\linewidth}{!}{
+    \includegraphics{images/SVM.png}
+    }
+\end{center}
+
+Find $\omega$ that maximizes the min distance of the closest points (support vectors) to the decision boundary. (There are at least 3 SVs)
+
+margin $ = \underset{i}{\text{min}}$ $y_i\langle\omega, x_i\rangle$, distance to SV = $\frac{y_i\langle\omega, x_i\rangle}{||\omega||}$
+
+Objective: maximize max margin direction: \\
+$\underset{\omega}{\text{argmax}}$ $ \text{margin}(\omega)$ so that
+
+Either  $||\omega|| = 1$ or $||\omega|| = \frac{1}{||margin||}$
+
+Latter case: can look for $\omega$ in the smaller subspace of $\omega$ which yield a margin of 1
+
+Objective: $\mathcal{L}$\color{red}(soft margin) \color{black} $=$
+\begin{center}
+    $\underset{\omega, \xi}{min}\frac{1}{2}||\omega||^2$\color{red}$ + C\sum_i\xi_i$\color{black}\\
+    s.t. $y_i\omega^Tx_i \geq 1$\color{red}$- \xi_i$ and $\xi_i \geq 0$ \color{black} $\forall i = 1,..,n$ 
+\end{center}
+
+
+Solve using lagrangian: 
+\begin{center}
+    $\mathcal{L} = \frac{1}{2}||\omega||^2 +$\color{red}$ C\sum_{i=1}^n\xi_i$\color{black}$ + \sum_{i=1}^n \alpha_i(1-\color{red}\xi_i \color{black} - y_i\omega^Tx_i)$
+\end{center}

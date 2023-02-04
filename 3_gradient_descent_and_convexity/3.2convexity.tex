@@ -1,0 +1,31 @@
+\subsection{Convexity}
+
+\textbf{Always:}
+\begin{itemize}
+    \item global min/max $\Rightarrow$ local min/max
+    \item local min/max $\Rightarrow$ stationary point
+    \item $L(\omega) < L(v) \forall v\neq \omega \Leftrightarrow \omega$ is a global min
+\end{itemize}
+\textbf{Convexity:}
+\begin{itemize}
+    \item 0-order condition: $L(sw + (1-s)v) \leq sL(w) + (1-s)L(v)$
+    aka function is lower or equal to linear connection of two points.
+    \item 1st-order: $L(v) \geq L(\omega) + \nabla L(\omega)^T(v-\omega)$ aka any point v on function is higher than point on linear approximation drawn at position $\omega$
+    \item 2nd-order: $\nabla^2 L(\omega)$ is p.s.d. aka non-neg. curvature throughout function.
+    \item $\omega$ stationary $\Rightarrow \omega$ is local minimum 
+    \item $\omega$ is local minimum $\Rightarrow \omega$ is global minimum
+\end{itemize}
+\textbf{Strong Convexity:}
+\begin{itemize}
+    \item 0-order: $L(sw + (1-s)v) + \epsilon \leq sL(w) + (1-s)L(v)$ so fct always a bit below linear connection of points
+    \item 1st-order: same as convex
+    \item 2nd-order: strictly positive curvature always
+    \item $\omega$ is global minimum $\Rightarrow L(\omega) < L(v) \forall v\neq \omega$ 
+    \item Only one global minimum
+\end{itemize}
+\textbf{Convexity Operations:}
+\begin{itemize}
+    \item Linear Comb. of convex functions are convex
+    \item $f(g(x))$ is convex if f convex and g affine or f non-decreasing and g convex.
+    \item Adding a convex and a strictly convex fct. yields a strictly convex function
+\end{itemize}

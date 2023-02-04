@@ -1,0 +1,19 @@
+\subsection{Bias and Variance}
+
+\begin{itemize}
+    \item \textbf{Bias} $= \mathbb{E}\left[(f(x) - \hat{f}(x))^2\right]$ Badness of model\\
+    High for simple models and complex Ground Truths
+    \item \textbf{Variance} = $\mathbb{E}\left[(\hat{f}(x) - \mathbb{E}\hat{f}(x))^2\right]$ fluctuation of $\hat{f}$\\
+    High for a too complex model and too little data (overfitting)\\
+\end{itemize}
+
+For the noiseless case $y = f(x)$ a complex model can still overfit if the sample data is not representative of all data.
+
+% TODO
+Generalization Error = $\text{bias}^2 + \textbf{variance}$, idea of regularization: increase bias a bit to strongly decrease variance
+
+
+
+
+
+

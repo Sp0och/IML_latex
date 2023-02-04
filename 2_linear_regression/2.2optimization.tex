@@ -1,0 +1,11 @@
+\subsection{Optimization}
+
+    If not solvable in closed form or expensive to invert $X^TX\rightarrow$ Gradient Descent:
+    
+    $\omega_{t+1} \leftarrow \omega_t - \eta \nabla L(\boldsymbol{\omega_t})$, $\eta$ is the learning rate.
+    
+    Convergence guaranteed for $\eta \geq \frac{2}{\lambda_{max}}$, where $\lambda_{max}$ is the max EV of $X^TX$. 
+    
+    $X^TX$ diagonal $\Rightarrow$ contour lines ($L$ const) are ellipses
+    
+    

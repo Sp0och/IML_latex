@@ -1,0 +1,17 @@
+\subsection{Gradient Descent}
+
+$\omega_{t+1} \leftarrow \omega_t - \eta L(\omega_t)$
+
+Converges to a stationary point. $\nabla L(\omega) = 0 \Rightarrow$ GD stuck.
+
+Complex fcts: $\nabla L(\omega)$ from lin. approx. and use small $\eta$
+
+Large EVs for data depending heavily on one attribute and vice versa. Well conditioned if $\lambda_{max}$ and $\lambda_{min}$ are in similar range.
+
+GD is sometimes slower and less accurate but there is more control and less comp. complexity
+
+\textbf{Gradient Methods:} Momentum usage, Adaptive Methods, 2nd order methods
+
+\textbf{Stochastic GD}: Use subsample from data for update step. Helps against saddle point conversion.
+
+

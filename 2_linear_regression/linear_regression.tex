@@ -1,8 +1,13 @@
 General Regression: find $\hat{y} = f(x) \leftrightarrow \underset{\hat{y}(x)}{min} ||y - \hat{y}(x)||_2^2$.
 Linear Regression: Weights are applied linearly:
 
-$f(x) = \beta x$ or nonlinear \textbf{base fct}: $f(x) = \beta\phi(x)$
+$f(x) = \omega x$ or nonlinear \textbf{base fct}: $f(x) = \omega\phi(x)$
 
-Multidim.: $\underset{\beta}{min}||\boldsymbol{Y-X\beta||}^2$, $\boldsymbol{Y} \in \mathbb{R}^n, \boldsymbol{X} \in \mathbb{R}^{nxd},\boldsymbol{\beta} \in \mathbb{R}^d$
+Multidim.: $L = \underset{\omega}{min}||\boldsymbol{Y-X\omega||}^2$, 
 
-If 
+$Y \in \mathbb{R}^n, x \in \mathbb{R}^{nxd},\omega \in \mathbb{R}^d$
+
+\input{2_linear_regression/2.1closed_solution.tex}
+\input{2_linear_regression/2.2optimization.tex}
+\input{2_linear_regression/2.3nonlinear_regression.tex}
+\input{2_linear_regression/2.4_regularization.tex}

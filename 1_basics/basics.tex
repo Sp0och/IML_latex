@@ -2,16 +2,18 @@
     \item General p-norm: $||x||_p = (\sum_{i=1}^{n}|x_i|^p)^{1-p}$
     \item Taylor: $f(a) + \frac{f'(a)}{1!}(x-a)  + \frac{f''(a)}{2!}(x-a)^2 + \mathbb{O}(x^3)$
     \item Power series of exp.: $exp(x) := \sum_{k=0}^{\infty}\frac{x^k}{k!}$
+    \item $\sum_{k=0}^\infty (xy)^k = \frac{1}{1-xy}$
     \item Entropy: H(X) = $\mathbb{E}_X\left[-log\mathbb{P}(X=x)\right]$
     \item KL-Divergence: \\$D_{KL}(P||Q)=\sum_{x\in \mathbb{X}}P(x)log\left(\frac{P(x)}{Q(x)}\right) \geq 0$
     \item $1-z \leq exp(-z)$
     \item Cauchy-Schwarz: $|\mathbb{E}\left[X,Y\right]|^2 \leq\mathbb{E}(X^2)\mathbb{E}(Y^2)$
     \item Jensens Inequality: for a convex f(X): \\$f(\mathbb{E}(X))\leq\mathbb{E}(f(X))$
+    \item M p.s.d. if $v^T M v \succeq 0$
 \end{itemize}
 Probability Theory:
 \begin{itemize}
     \item Gaussian: $\mathcal{N}(x|\mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}exp(-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2})$
-    \item $\mathcal(N)(\boldsymbol{x|\mu,\Sigma}) = \\\frac{1}{\sqrt{(2\pi)^d|\boldsymbol{\Sigma}|}}exp(-\frac{1}{2}(\boldsymbol{x} - \mu)^T\boldsymbol{\Sigma}^{-1}(\boldsymbol{x}-\mu))$
+    \item $\mathcal(N)(\boldsymbol{x|\mu,\Sigma}) = \\\frac{1}{\sqrt{(2\pi)^d|\boldsymbol{\Sigma}|}}exp(-\frac{1}{2}(x - \mu)^T\boldsymbol{\Sigma}^{-1}(x-\mu))$
     \item $X\sim\mathcal{N}(\boldsymbol{\mu,\Sigma}), Y=A + BX \Rightarrow \\Y \sim \mathcal{N}(A + B\boldsymbol{\mu},B\boldsymbol{\Sigma^{-1}}B^T)$
     \item Binomial Distr.: $f(k,j;p) = \\\mathbb{P}(X=x)=\begin{pmatrix}
         n\\k
@@ -26,17 +28,17 @@ Calculus
     \item $\int uv'dx = uv - \int u'vdx$\hspace{0.3cm}$ \bullet\frac{\partial}{\partial x}\frac{g}{h} = \frac{g'h}{h^2} - \frac{gh'}{h^2}$
     \item $\frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{b^TAx})=A^Tb$\hspace{0.3cm}$\bullet \frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{b^Tx}) = \frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{x^Tb}) = b$
     \item $\frac{\partial}{\partial\boldsymbol{ X}}(\boldsymbol{c^TX^Tb}) = \boldsymbol{bc}^T$ \hspace{0.3cm} $\bullet\frac{\partial}{\partial\boldsymbol{ X}}(\boldsymbol{c^TXb}) = \boldsymbol{cb^T}$
-    \item $\frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{x^TAx})=(\boldsymbol{A^T +A})\boldsymbol{x} \overset{\text{A sym.}}{=} 2\boldsymbol{Ax}$
+    \item $\frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{x^TAx})=(\boldsymbol{A^T +A})x \overset{\text{A sym.}}{=} 2\boldsymbol{Ax}$
     \item $\frac{\partial}{\partial\boldsymbol{ X}}Tr(\boldsymbol{X^TA}) = A$\hspace{0.3cm}$\bullet$ Tr.trick: $\boldsymbol{x^TAx} \overset{\text{inner prod.}}{=}\\
     TR(\boldsymbol{x^TAx}) \overset{\text{cyclic perm.}}{=} Tr(\boldsymbol{xx^TA}) = Tr(\boldsymbol{Axx^T})$
-    \item $|X^{-1}|=|X|^{-1}$ \hspace{0.02cm} $\bullet \frac{\partial}{\partial\boldsymbol{ X}}log|\boldsymbol{X}|=\boldsymbol{X}^{-T}$ \hspace{0.02cm} $\bullet \frac{\partial}{\partial x}|x| = \frac{x}{|x|}$
-    \item $\frac{\partial}{\partial\boldsymbol{ x}}||\boldsymbol{x}||_2 = \frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{x^Tx}) = 2\boldsymbol{x}$
+    \item $|X^{-1}|=|X|^{-1}$ \hspace{0.02cm} $\bullet \frac{\partial}{\partial\boldsymbol{ X}}log|x|=x^{-T}$ \hspace{0.02cm} $\bullet \frac{\partial}{\partial x}|x| = \frac{x}{|x|}$
+    \item $\frac{\partial}{\partial\boldsymbol{ x}}||x||_2 = \frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{x^Tx}) = 2x$
     \item $\frac{\partial}{\partial\boldsymbol{ x}}||\boldsymbol{x-b}||_2 = \frac{\boldsymbol{x-b}}{||\boldsymbol{x-b}||_2}$
-    %here
-    \vfill\null \columnbreak
-    \item $\frac{\partial}{\partial\boldsymbol{ x}} ||\boldsymbol{x}||_1 = sgn(\boldsymbol{x})$
+    \item $\frac{\partial}{\partial\boldsymbol{ x}} ||x||_1 = sgn(x)$
     \item $\sigma(x) = \frac{1}{1 + exp(-x)} \Rightarrow $
     \item $\nabla \sigma(x) = \sigma(x)(1-\sigma(x)) = \sigma(x)\sigma(-x)$
     \item $tanhx = \frac{2sinhx}{2coshx} = \frac{e^x - e^{-x}}{e^x + e^{-x}}$
     \item $\nabla tanhx = 1 - tanh^2x$
+    \item $sin(a\pm b) = sin(a)cos(b) \pm cos(a)sin(b)$
+    \item $cos(a\pm b) = cos(a)cos(b) \mp sin(a)sin(b)$
 \end{itemize}
