@@ -35,8 +35,13 @@ Calculus
     \item $\frac{\partial}{\partial\boldsymbol{ x}}||x||_2 = \frac{\partial}{\partial\boldsymbol{ x}}(\boldsymbol{x^Tx}) = 2x$
     \item $\frac{\partial}{\partial\boldsymbol{ x}}||\boldsymbol{x-b}||_2 = \frac{\boldsymbol{x-b}}{||\boldsymbol{x-b}||_2}$
     \item $\frac{\partial}{\partial\boldsymbol{ x}} ||x||_1 = sgn(x)$
-    \item $\sigma(x) = \frac{1}{1 + exp(-x)} \Rightarrow $
-    \item $\nabla \sigma(x) = \sigma(x)(1-\sigma(x)) = \sigma(x)\sigma(-x)$
+    \item $\sigma_{\text{sigmoid}}(x) = \frac{1}{1 + exp(-x)} \Rightarrow $
+    \item $\nabla \sigma_{\text{sigmoid}}(x) = \sigma(x)(1-\sigma(x)) = \sigma(x)\sigma(-x)$
+    \item Jacobian $= \frac{d}{d\boldsymbol{x}}f(\boldsymbol{x}) = \begin{pmatrix}
+        \frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_n}\\
+        \dots & & \dots\\
+        \frac{\partial f_n}{\partial x_1} & ... & \frac{\partial f_n}{\partial x_n}
+    \end{pmatrix}$
     \item $tanhx = \frac{2sinhx}{2coshx} = \frac{e^x - e^{-x}}{e^x + e^{-x}}$
     \item $\nabla tanhx = 1 - tanh^2x$
     \item $sin(a\pm b) = sin(a)cos(b) \pm cos(a)sin(b)$

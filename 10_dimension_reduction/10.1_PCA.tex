@@ -1,0 +1,28 @@
+\subsection{PCA}
+
+Finding linear transform to lower dimension that maximizes variance of data. Typically assume centered data.
+
+$\pi(x) = \mu^Tx \Rightarrow \text{ maximize } \underbrace{\mu^T\frac{1}{n}\sum_i(\bar{x} -x_i)^2\mu}_{Variance(\pi(x))}, ||\mu|| = 1$
+
+Note: we set $||\mu|| = 1$ to resolve uniqueness issue
+\begin{center}
+    $\Rightarrow \mathcal{L} = \mu^T\frac{1}{n}\sum_i(\bar{x} -x_i)^2\mu + \lambda(1-||\mu||)$\\
+    $\frac{\partial \mathcal{L}}{\partial \mu} \Rightarrow \underbrace{Var(x)}_{S}\mu = \lambda \mu \Rightarrow \lambda$ is highest EV of S\\
+    $\mu$ is the respective Eigenvector\\
+    Note S becomes $\frac{1}{n}\sum_{i=1}^nx_ix_i^T$ when centered
+\end{center}
+Multiple dimensions: Solution can be optained in closed form also for $k> 1$
+\begin{center}
+    First PC with $X_1 = x$ as for $d = 1$, then $X_2 = X_1-proj_{\mu_1}X_1$\\
+    Then PCA with $X_2$, $X_3 = X_2 - proj_{\mu_2}X_2$,... \\$\Rightarrow \pi(x) = (x^T\mu_1,..,x^T\mu_d)$
+\end{center}
+
+Alternatively: $\underset{W, ||W||^2 = 1}{min}\sum_{i=1}^n||\boldsymbol{x}_i - z_i\boldsymbol{\omega}||^2 \rightarrow$ Regr.
+
+$z_i^* = \boldsymbol{\omega}^T\boldsymbol{x}_i \rightarrow \boldsymbol{\omega}^* = arg \underset{||\omega||_2 = 1}{min}\sum_{i=1}^n||\boldsymbol{\omega}\boldsymbol{\omega}^T\boldsymbol{x}_i - \boldsymbol{x}_i||^2_2$
+
+$\rightarrow arg \underset{||\omega||_2 = 1}{min}\boldsymbol{\omega}^T\boldsymbol{\Sigma}\boldsymbol{\omega}$, $\boldsymbol{\Sigma} = \sum_{i=1}^n \lambda_iv_iv_i^T$
+
+Can use Kernels ($k> d$ or $k \approx d$ ) %TODO
+
+PCA - K-means: Pretty much the same problem statement but for PCA $||\omega|| = 1$ and $z_i \in \mathbb{R}^k$ while for k-means $z_i$ are unit vectors

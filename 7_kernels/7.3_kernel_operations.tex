@@ -1,0 +1,20 @@
+\subsection{Kernel Operations}
+
+Examples of valid kernels:
+\begin{itemize}
+    \item $\alpha x^Tx'$
+    \item Polynomial: $\alpha(x^Tx' + \beta\mathbb{I})^p$
+    \item RBF(Gaussian): $exp(-\frac{||x-x'||^2_2}{h^2})$
+    \item Sigmoid: $tanh(\kappa x^Tx' - b)$
+\end{itemize}
+
+Given two valid kernels $k_1(x,x')$ and $k_2(x,x')$ the following are also valid:
+
+\begin{itemize}
+    \item $ak_1(x,x')$ for $a\in\mathbb{R}$
+    \item $k_1(x,x') + k_2(x,x')$
+    \item $k_1(x,x')k_2(x,x')$
+    \item $f(x)k_1(x,x')f(x')$
+    \item $k(\phi(x),\phi(x'))$
+    \item $g(k_1)$ with g: exp. or polyn. with all pos. coeff.
+\end{itemize}

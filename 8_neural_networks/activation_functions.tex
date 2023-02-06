@@ -3,7 +3,12 @@
 A neural network with one hidden layer and nonlinear activation functions can approximate every continuous function.
 
 \begin{itemize}
-    \item Sigmoid
-    \item Relu
-    \item Relu Variants
+    \item Sigmoid: $\varphi(z) = \frac{1}{1+ exp(-z)} = \frac{exp(z)}{1+exp(z)}$, \\$\varphi'(z) = \varphi(z)(1-\varphi(z))$
+    \item Relu: $\varphi(z) = max(0,z)$ (vanishing grad. for z $<$ 0)
+    \item Tanh: $tanh(z) = \frac{exp(z)-exp(-z)}{exp(z)+exp(-z)}$
+    \item ELU$_\alpha$ (exp. relu): $\begin{cases}
+        \alpha (exp(z)-1),& \text{if } z<0\\
+        z, & \text{if } z \geq 0
+    \end{cases}$
+    \item Softmax: $\varphi(z_i) = \frac{exp(z_i)}{\sum_{j}exp(z_j)}$
 \end{itemize}

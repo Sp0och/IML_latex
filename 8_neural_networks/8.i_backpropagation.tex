@@ -1,3 +1,20 @@
 \subsection{Backpropagation}
 
-Weight updates make use of the chain rule of the NN structure.
+Can reuse computations from \color{NavyBlue} forward propagation \color{black} and from \color{Green} layer $l_{i+1}$ ... \color{black} to \color{Red} compute \color{black} $W^{(i)}$ 
+
+\begin{center}
+    $(\nabla_{W^{(i)}}l)^T  = \color{Green}\underbrace{\frac{\partial l}{\partial f}}_{\delta{(L)}}\frac{\partial f}{\partial z^{(L-1)}}\frac{\partial z^{(L-1)}}{\partial z^{(L-2)}}...\color{Red} \frac{\partial z^{(i+1)}}{\partial z^{(i)}}\color{NavyBlue}\underbrace{\frac{\partial z^{(i)}}{\partial W^{(i)}}}_{v^{(i-1)}}$\\
+    $\nabla_{W^{(l)}}l = \boldsymbol{\delta}^{(l)}\boldsymbol{v}^{(l-1)}$, $\boldsymbol{\delta}^{(l)} = diag(\varphi'(z^{(l)})W^{(l+1)})\boldsymbol{\delta}^{(l)}$\\
+    $\omega^{(t+1)}_{L-l} \leftarrow \omega^{(t)} - \eta \frac{\partial l}{\omega_{L-l}}$
+\end{center}
+\textbf{Note} usually minibatches are used for cum. weight updates.
+
+Running time grows linearly with num of params in feed forward
+
+\textbf{Modifications}:
+\begin{center}
+    Momentum: initialize $d = 0$\\
+    $\boldsymbol{d} \leftarrow m*\boldsymbol{d} + \eta_t\nabla_Wl(\boldsymbol{W};\boldsymbol{x},y)$\\
+    $W \leftarrow W - \boldsymbol{d}$
+\end{center}
+

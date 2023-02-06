@@ -1,15 +1,15 @@
 \subsection{Regularization in NNs}
 
 \begin{itemize}
+    \item Regularization term in Loss function
     \item Early stopping (before convergence to lowest training error)
     \item Dropout: deactivate about 50\% of the nodes during training
     \item Data augmentation
-    \item Batch normalization
 \end{itemize}
 
 \textbf{Batch normalization}
 
-Normalize unit activations for a layer.
+Normalize unit activations for a layer.  
 
 BN($v,\gamma,\beta$)
 \begin{itemize}
@@ -18,3 +18,4 @@ BN($v,\gamma,\beta$)
     \item $\hat{v}_i = \frac{v_i - \mu_S}{\sqrt{\sigma_S^2} + \epsilon}$
     \item Scale and shift: $\bar{v}_i = \gamma\hat{v}_i + \beta$
 \end{itemize}
+Speeds up and stabilizes training. Solves covariate shift (different inputs also inbetween layers). Reduces importance of weight initialization. At initialization introduces exploding gradients. Has a mild regularization effect because of "random" batch size.

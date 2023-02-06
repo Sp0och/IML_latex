@@ -1,6 +1,6 @@
 \subsection{Standardization}
 
-Standardizing features $x_{new} = \frac{x-\mu}{\sigma}$ yields values between 0 and 1. Necessary if one feature is comprised of comparatively larger values than others and has thus a bigger influence on the weights. Especially important for euclidian distance based methods like \textbf{knn,SVM,PCA,NNs,GD}
+Standardizing features $x_{new} = \frac{x-\mu}{\sigma}$ yields values between 0 and 1. Necessary if one feature is much bigger than others and has a bigger influence on the weights. Standardizing allows for higher learning rates. Especially important for euclidian distance based methods like \textbf{knn,SVM,PCA,NNs,GD}
 \begin{itemize}
     \item KNN and SVM are methods based on the euclidian distance between the points 
     \item NNs converge faster with standardized data. Also helps with vanishing gradients.

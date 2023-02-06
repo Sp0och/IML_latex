@@ -1,18 +1,35 @@
-Backpropagation: Running time grows linearly with num of params in feed forward
-momentum and that stuff
+NNs allow us to choose the feature maps in the model itself
 
+\begin{center}
+    \resizebox{0.6\linewidth}{!}{
+    \includegraphics{images/NN.png}
+    }
+\end{center}
 
-Vanishing, exploding gradient. vanishing problem not there for every input
+\begin{center}
+    $z_1^{(1)} = \sum_{j=1}^d\omega_{1,j}^{(1)}x_j + \omega_{1,0}^{(1)}$\\
+    $z_k^{(l)} = \sum_{j=1}^{n_{l-1}}\omega_{k,j}^{(l)}v_{j}^{(l-1)} + \omega_{k,j}^{(l)}$ \hspace{0.2cm} $v_l = \varphi(z_l)$
+\end{center}
+for $l = 1,..,L$ the number of layers
+
+Vector notation:
+\begin{center}
+    $\boldsymbol{z}^{(l)} = \boldsymbol{W}^{(l)}\boldsymbol{v}^{(l-1)} + \boldsymbol{W}_0^{(l)}$\\
+    $f(\boldsymbol{x}) = \boldsymbol{W}^{(L)}\boldsymbol{v}^{(L-1)}$\\
+    where $\boldsymbol{v}^{(l)} = \left[\varphi(\boldsymbol{z}^{(l)};1)\right]$ $\varphi$ applied comp. wise
+\end{center}
+
+$\rightarrow$ optimize weights w.r.t. loss function (squared loss, cross-entropy etc.)
+
+\begin{center}
+    $l(\boldsymbol{W};\boldsymbol{x},y)= \sum_{i=1}^nl_i(\boldsymbol{W};\boldsymbol{x}_i,y_i)$
+\end{center}
+Universal approx. theorem: Any cont. fct can be approximated by a finite layered NN with sigmoidal act. function.
 
 Weight decay reduces complexity
-
-what functions can be approximated at what point. A NN with one hidden layer and a nonlinear act. function can approximate every continuous function
-
-CNNs: need also nonlinear act fcts to approximate nonlin fcts
-
 \input{8_neural_networks/activation_functions.tex}
 \input{8_neural_networks/8.i_backpropagation.tex}
 \input{8_neural_networks/8.j_vanishing_exploding_gradient.tex}
-\input{8_neural_networks/convolutional_nns.tex}
 \input{8_neural_networks/regularization.tex}
+\input{8_neural_networks/convolutional_nns.tex}
 \input{8_neural_networks/resnet.tex}
