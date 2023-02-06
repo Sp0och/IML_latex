@@ -1,0 +1,17 @@
+\subsection{Bayesianism}
+
+Prior $p(\theta)$ about data, likelihood $p(y|x) \Rightarrow$ posterior $p(\theta|y,x) = \frac{p(\theta) p(y|x,\theta)}{p(y|x)}$, where p(x) are cancelled out.
+
+Maximum Aposteriori Estimate (MAP):
+\begin{center}
+    arg $\underset{\theta}{max}$ $p(\theta)\prod_{i=1}^n p(y_i|x_i,\theta)$
+    \\ for $\theta \sim \mathcal{N}(0,\sigma^2\mathcal{I})$ MAP yields ridge regr.
+\end{center}
+
+Can easily change priors e.g. laplacian prior $\Rightarrow$ lasso OLS %TODO what are the params
+
+Gaussian yields very low prob. for values far from mean
+
+laplacian: $p(x;\mu,b) = \frac{1}{2b}exp(-\frac{|x-\mu|}{b})$
+
+student-t: allows more slack for furthe away values.
