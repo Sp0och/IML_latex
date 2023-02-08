@@ -1,0 +1,25 @@
+\subsection{Conjugate Priors}
+
+Computing the posterior $p(\theta|x,y) = \frac{p(\theta)p(\theta|y,x)}{\int p(\hat\theta)p(y|x,\hat\theta)d\theta}$ Can be infeasible due to integration. $\Rightarrow$ conjugate priors make posterior of the same form as prior and int. is doable. (Almost no comp. cost)
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Prior/Posterior} & \textbf{Likelihood Fct} \\
+        \hline
+        Beta & Bernoulli/Binom.\\
+        \hline
+        Dirichlet & Cathegorical/Multinom.\\
+        \hline
+        Gaussian, fixed cov. & Gaussian  \\
+        \hline
+        Gaussian-inverse Wishart & Gaussian  \\
+        \hline
+        Gaussian process & Gaussian  \\
+        \hline
+        % Gaussian, fixed cov. & denote arrival/release time,\newline  start time,\newline  finishing time and \newline absolute deadline of task j  \\
+    \end{tabular}
+\end{center}
+
+Hyperparameters with CV
+

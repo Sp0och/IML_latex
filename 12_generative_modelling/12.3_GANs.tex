@@ -1,0 +1,28 @@
+\subsection{GANs}
+
+Discriminator working against Generator:
+\begin{center}
+    $\underset{\omega_G}{\text{min }}\underset{\omega_D}{\text{max}}\underbrace{\mathbb{E}_{x\sim Data}logD(\boldsymbol{x}) + \mathbb{E}_{\boldsymbol{z}\sim G}log(1-D(G(\boldsymbol{z})))}_{M(\omega_G,\omega_D)}$
+\end{center}
+With $D(x) = D(x,\omega_D), G(z) = G(z,\omega_G)$
+
+\begin{itemize}
+    \item Finds saddle point
+    \item For unlimited data $D^*_G = \frac{P_{data}(x)}{P_G(x) + P_{data}(x)}$
+    Only conceptual as we can't know $P_G$ and aren't given $P_{data}$
+\end{itemize}
+
+Common training approach: simultaneous GD:
+\begin{center}
+    $\boldsymbol{\omega}_G^{(t+1)} = \boldsymbol{\omega}_G^{(t)} - \eta_t\nabla_{\boldsymbol{\omega}_G}M(\boldsymbol{\omega}_G,\boldsymbol{\omega}_D^{(t)})$\\
+    $\boldsymbol{\omega}_D^{(t+1)} = \boldsymbol{\omega}_D^t - \eta_t\nabla_{\boldsymbol{\omega}_D}M(\boldsymbol{\omega}_G^{(t)},\boldsymbol{\omega}_D)$\\
+    Usually using minibatches of data\\
+    Possible problems: Oscillation, Mode collapse%TODO?
+    data memo. leading to degeneracy, how to evaluate a GAN
+\end{center}
+Performance metric: Duality gap:
+\begin{center}
+    $DG(\omega_G,\omega_D) := \underset{\omega_D'}{\text{max}}M(\omega_G,\omega_D') - \underset{\omega_G'}{\text{min}}M(\omega_G',\omega_D)$
+    $DG \geq 0, DG = 0$ if $\omega_G \& \omega_D$ perform perfect equilibrium.\\
+    If D and G have sufficient cap. DG upper bounds Jensen-Shanon Divergence
+\end{center}

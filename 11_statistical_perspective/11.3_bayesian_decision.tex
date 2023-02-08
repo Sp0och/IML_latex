@@ -1,3 +1,31 @@
 \subsection{Bayesian Decision}
 
-Can use decision rules to perform classification from generative models.
+Pick action that minimizes expected loss.
+
+\begin{center}
+    $C(y,a) = \begin{cases}
+        [y \neq a], & \text{if } a \in [+1,-1]\\
+        c, & \text{if } a = D
+    \end{cases}$
+\end{center}
+
+With abstention:
+\begin{center}
+    $a^* = \begin{cases}
+        y, & \text{if } P(y|x) \geq 1-c\\
+        D, & \text{otherwise} 
+    \end{cases}$
+\end{center}
+
+E.g. logistic loss in binary classification: Pick $y = +1$ if
+\begin{center}
+    $p(y=-1|x) * \text{C}_{FP} < p(y=+1|x)*\text{C}_{FN} \Rightarrow$\\$ p(y=+1|x)\geq C_{FP}(C_{FP} + C_{FN})$
+\end{center}
+
+Decision rule for bin. class.: (f is called Discriminative fct.)
+
+$f(x) = log(\frac{p(y=1|x)}{p(y=-1|x)}) \Rightarrow f(x)>0 \Rightarrow $ choose y=1
+
+\textbf{Active Learning:} get labels in algorithm. Uncertainty sampling: Query labels of samples which the generative model is least sure about. i.i.d assumption is violated and can yield bad model. Can also query label of sample which when known makes other labels most probable.
+
+

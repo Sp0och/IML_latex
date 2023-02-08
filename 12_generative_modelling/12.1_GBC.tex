@@ -1,0 +1,28 @@
+\subsection{Gaussian Bayes Classifier}
+
+\begin{itemize}
+    \item Consider classes $y$ with $p_y = p(Y=y), p_y = \frac{\# Y=y}{n}$
+    \item $P(\boldsymbol{x}|y) \sim \mathcal{N}(\boldsymbol{x};\mu_y,\sigma_{y}^2)$
+
+    $\boldsymbol{\mu}_{y} = \frac{1}{\# Y = y}\sum_{y_i=y}\boldsymbol{x}_i$, $\boldsymbol{\Sigma}_y = \sum_{y_i=y} (\boldsymbol{x}_i-\boldsymbol{\mu}_{y})^2$
+
+    Aka $\boldsymbol{\mu}$ and $\boldsymbol{\Sigma}$ class wise
+    \item $y = \underset{y'}{\text{argmax}}P(y'|x) = \underset{y'}{\text{argmax}}P(y')\prod_{i=1}^dP(x_i|y')$
+    With i the ith coordinate of a feature x
+    \item To predict: $P(y|x) = \frac{P(y)P(x|y)}{\sum_yP(y)P(x|y)} \Rightarrow$ bayes. decis.
+    \item Fisher's LDA: $p = 0.5$, $\Sigma_+ = \Sigma_-$. $c=2$\\
+    LDA if $c\geq 2, p$ random, QDA $=$ LDA with $\Sigma_i \neq \Sigma_j$
+    \item Naive Bayes: $\Sigma_y = diag(\sigma_{y,1},..,\sigma_{y,d})$, $c\geq 2$
+    \item GMMBC GMM instead of a single gaussian as \\likelihood estimation
+\end{itemize}
+\textbf{GNB}: Naive because it assumes independent samples (e.g. duplicate features would lead to overconfidence)
+
+$f(x) = log\frac{p(Y=1|x)}{p(Y=-1|x)} \Rightarrow p(Y=1|x) = \frac{1}{1+exp(-f(x))}$
+
+$= \sigma(\boldsymbol{\omega}^Tx + \omega_0) \Rightarrow$ same as log. reg. with
+
+$\omega_0 = log\frac{p_+}{1-p_+} + \sum_{i=1}^d\frac{\mu_{-,i}^2 - \mu_{+,i}^2}{2\sigma_i^2}$, $\omega_i = \frac{\mu_{+,i} - \mu_{-,i}}{\sigma_i^2}$
+
+\textbf{Note:} can introduce bias through choice of likelihood (e.g. GNB) to avoid overfitting
+
+Also note that more clusters can fit the data better or as good (sup. no overfitting) while too few clusters is an issue.

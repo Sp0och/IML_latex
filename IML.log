@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  6 FEB 2023 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  8 FEB 2023 14:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -713,30 +713,30 @@ File: images/NN.png Graphic file (type png)
 <use images/NN.png>
 Package pdftex.def Info: images/NN.png  used on input line 6.
 (pdftex.def)             Requested size: 1136.24222pt x 767.86687pt.
- (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/activation_functions.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/8.i_backpropagation.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/8.j_vanishing_exploding_gradient.tex [2 </Users/lfierz/arbeiten/Latex/IML/images/SVM.png> </Users/lfierz/arbeiten/Latex/IML/images/NN.png>]) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/regularization.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/convolutional_nns.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/resnet.tex)) (/Users/lfierz/arbeiten/Latex/IML/9_clustering/clustering.tex (/Users/lfierz/arbeiten/Latex/IML/9_clustering/k-means.tex)) (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/dimensionality_reduction.tex (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/10.1_PCA.tex) (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/10.2_autoencoders.tex)) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/statistical_perspective.tex (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/11.1_frequentism.tex) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/11.2_bayesianism.tex)) (/Users/lfierz/arbeiten/Latex/IML/12_generative_modelling/generative_modelling.tex) (/Users/lfierz/arbeiten/Latex/IML/13_gmm/gmm.tex) (/Users/lfierz/arbeiten/Latex/IML/additionals/additionals.tex (/Users/lfierz/arbeiten/Latex/IML/additionals/a.1_standardization.tex) (/Users/lfierz/arbeiten/Latex/IML/additionals/a.2_classification_evaluation.tex
-<images/ROC.png, id=40, 220.825pt x 220.825pt>
+ (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/activation_functions.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/8.i_backpropagation.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/8.j_vanishing_exploding_gradient.tex [2 </Users/lfierz/arbeiten/Latex/IML/images/SVM.png> </Users/lfierz/arbeiten/Latex/IML/images/NN.png>]) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/regularization.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/convolutional_nns.tex) (/Users/lfierz/arbeiten/Latex/IML/8_neural_networks/resnet.tex)) (/Users/lfierz/arbeiten/Latex/IML/9_clustering/clustering.tex (/Users/lfierz/arbeiten/Latex/IML/9_clustering/k-means.tex)) (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/dimensionality_reduction.tex (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/10.1_PCA.tex) (/Users/lfierz/arbeiten/Latex/IML/10_dimension_reduction/10.2_autoencoders.tex)) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/statistical_perspective.tex (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/11.1_frequentism.tex) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/11.2_bayesianism.tex) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/11.3_bayesian_decision.tex) (/Users/lfierz/arbeiten/Latex/IML/11_statistical_perspective/11.4_conj_priors.tex)) (/Users/lfierz/arbeiten/Latex/IML/12_generative_modelling/generative_modelling.tex (/Users/lfierz/arbeiten/Latex/IML/12_generative_modelling/12.1_GBC.tex [3]) (/Users/lfierz/arbeiten/Latex/IML/12_generative_modelling/12.2_outlier_rejection.tex) (/Users/lfierz/arbeiten/Latex/IML/12_generative_modelling/12.3_GANs.tex)) (/Users/lfierz/arbeiten/Latex/IML/13_gmm/gmm.tex (/Users/lfierz/arbeiten/Latex/IML/13_gmm/13.1_EM.tex)) (/Users/lfierz/arbeiten/Latex/IML/additionals/additionals.tex (/Users/lfierz/arbeiten/Latex/IML/additionals/a.1_standardization.tex) (/Users/lfierz/arbeiten/Latex/IML/additionals/a.2_classification_evaluation.tex
+<images/ROC.png, id=43, 220.825pt x 220.825pt>
 File: images/ROC.png Graphic file (type png)
 <use images/ROC.png>
 Package pdftex.def Info: images/ROC.png  used on input line 27.
 (pdftex.def)             Requested size: 220.82445pt x 220.82445pt.
-)) [3 </Users/lfierz/arbeiten/Latex/IML/images/ROC.png>] (/Users/lfierz/arbeiten/Latex/IML/IML.aux)
+)) [4 </Users/lfierz/arbeiten/Latex/IML/images/ROC.png>] (/Users/lfierz/arbeiten/Latex/IML/IML.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17791 strings out of 480608
- 345115 string characters out of 5903631
- 635958 words of memory out of 5000000
- 33132 multiletter control sequences out of 15000+600000
+ 17821 strings out of 480608
+ 346414 string characters out of 5903631
+ 636516 words of memory out of 5000000
+ 33144 multiletter control sequences out of 15000+600000
  543265 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,77p,882b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,77p,882b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on /Users/lfierz/arbeiten/Latex/IML/IML.pdf (3 pages, 579480 bytes).
+Output written on /Users/lfierz/arbeiten/Latex/IML/IML.pdf (4 pages, 593681 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

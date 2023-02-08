@@ -1,0 +1,14 @@
+Discriminative Modelling: $p(y|x)$, generative modelling: $p(y,x)$ strictly more ambitious goal
+
+\textbf{Typical Approach:}
+\begin{itemize}
+    \item Estimate prior on labels $p(y)$
+    \item Estimate cond. distr. for each class $p(x|y)$ (e.g. how do the feature distributions look like)
+    \item Joint distribution $p(y,x)$ through Bayes law 
+\end{itemize}
+Alternative approach: $p(x) + p(x|y) \rightarrow p(x,y)$
+
+
+\input{12_generative_modelling/12.1_GBC.tex}
+\input{12_generative_modelling/12.2_outlier_rejection.tex}
+\input{12_generative_modelling/12.3_GANs.tex}

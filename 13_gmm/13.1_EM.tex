@@ -1,0 +1,32 @@
+\subsection{Expectation Maximization (EM)}
+
+Hard EM:
+\begin{itemize}
+    \item Initialize parameters $\theta$
+    \item E-step: Get most likely class for a datapoint
+    
+    $z_i^{(t)} = \underset{z}{\text{argmax}} P(z|\boldsymbol{x}_i,\theta^{(t-1)})$
+
+    After E-step we have complete datasets $\Rightarrow$ MLE
+    \item M-step: MLE
+
+    $\theta^{(t)} = \underset{\theta}{\text{argmax}}P(D^{(t)}|\theta)$
+    \item Issues: Always works with more clusters ($\infty$ for many with $\sigma = 0$) also possible multiple on top of each other, doesn't consider certainties (bad for overlaps)
+    \item k-means is like special case with uniform weights and spherical covariance
+\end{itemize}
+
+(soft) EM algorithm:
+\begin{itemize}
+    \item Param initialization
+    \item Estimate affiliation prob. of each datapoint and each cluster
+    \item MLE
+    \item Repeat
+    \item Applications include: Clustering, Density estimation, Classification and Outlier detection
+    \item Monotonically increases likelihood
+    \item Depends on init. (often multiple random init. runs)
+\end{itemize}
+
+GMMs can overfit ($\infty$ clusters) can be fixed with prior or simpler model (Naive Bayes e.g.)
+
+%TODO
+% possible to alter GD to arrive at something similar like EM

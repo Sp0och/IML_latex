@@ -15,3 +15,13 @@ Gaussian yields very low prob. for values far from mean
 laplacian: $p(x;\mu,b) = \frac{1}{2b}exp(-\frac{|x-\mu|}{b})$
 
 student-t: allows more slack for furthe away values.
+
+\textbf{General MAP procedure:} 
+\begin{itemize}
+    \item Choose likelihood fct. according to problem
+    \item Choose prior for parameters
+    \item Optimize MAP parameters
+    \item Choose hyperparameters through CV
+    \item Make predictions using Bayesian decision
+\end{itemize}
+
