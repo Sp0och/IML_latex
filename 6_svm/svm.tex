@@ -1,19 +1,14 @@
-\begin{center}
-    \resizebox{0.6\linewidth}{!}{
-    \includegraphics{images/SVM.png}
-    }
-\end{center}
+% \begin{center}
+%     \resizebox{0.6\linewidth}{!}{
+%     \includegraphics{images/SVM.png}
+%     }
+% \end{center}
 
-Find $\omega$ that maximizes the min distance of the closest points (support vectors) to the decision boundary.
+margin $ = \underset{i}{\text{min}}$ $y_i\langle\omega, x_i\rangle$, distance DB-SV = $\frac{y_i\langle\omega, x_i\rangle}{||\omega||}$
 
-margin $ = \underset{i}{\text{min}}$ $y_i\langle\omega, x_i\rangle$, distance to SV = $\frac{y_i\langle\omega, x_i\rangle}{||\omega||}$
+$\underset{\omega}{\text{argmax}}$ $ \text{margin}(\omega)$s.t. $||\omega|| = 1$ or $||\omega|| = \frac{1}{||margin||}$
 
-Objective: maximize max margin direction: \\
-$\underset{\omega}{\text{argmax}}$ $ \text{margin}(\omega)$ so that
-
-Either  $||\omega|| = 1$ or $||\omega|| = \frac{1}{||margin||}$
-
-Latter case: can look for $\omega$ in the smaller subspace of $\omega$ which yield a margin of 1
+Latter case: smaller subspace to look for $\omega$
 
 Objective: $\mathcal{L}$\color{red}(soft margin) \color{black} $=$
 \begin{center}

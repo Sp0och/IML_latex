@@ -1,16 +1,16 @@
 \subsection{Standardization}
 
-Standardizing features $x_{new} = \frac{x-\mu}{\sigma}$ yields values between 0 and 1. Necessary if one feature is much bigger than others and has a bigger influence on the weights. Standardizing allows for higher learning rates. Especially important for euclidian distance based methods like \textbf{knn,SVM,PCA,NNs,GD}
-\begin{itemize}
-    \item KNN and SVM are methods based on the euclidian distance between the points 
-    \item NNs converge faster with standardized data. Also helps with vanishing gradients.
-    \item PCA requires standardization because it considers the variance of the featues in order to find the principle components. 
-\end{itemize}
+$x_{new} = \frac{x-\mu}{\sigma}$  - if one feature is bigger than others. Allows higher learning rates. Important for distance based methods: \textbf{knn,SVM,PCA,NNs,GD}
 Stdz always \textbf{after} train-test split.
+% \begin{itemize}
+%     \item KNN and SVM are methods based on the euclidian distance between the points 
+%     \item NNs converge faster with standardized data. Also helps with vanishing gradients.
+%     \item PCA requires standardization because it considers the variance of the featues in order to find the principle components. 
+% \end{itemize}
 
-Stdz not necessary for distance independent methods:
-\begin{itemize}
-    \item Naive Bayes
-    \item LDA
-    \item Tree based methods (boosting, Random forests) etc.
-\end{itemize}
+% Stdz not necessary for distance independent methods:
+% \begin{itemize}
+%     \item Naive Bayes
+%     \item LDA
+%     \item Tree based methods (boosting, Random forests) etc.
+% \end{itemize}

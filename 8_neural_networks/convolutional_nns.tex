@@ -1,7 +1,6 @@
 \subsection{Convolutional Neural Networks}
 
-Unfeasible to fully connect vectorized images due to number of parameters.
-
+Less params than FC for images / audio
 \begin{itemize}
     \item Invariant regarding shifts, scale and rotation
     \item Updates still through backpropagation
@@ -15,6 +14,4 @@ image: n x n, m kernels of size k*k, stride s, padding p:
     $l = \frac{n + 2p -k}{s} + 1$
 \end{center}
 
-\textbf{(Max)Pooling}
-
-Strongly reduces number of parameters
+\textbf{(Max)Pooling}: Strongly reduces number of parameters

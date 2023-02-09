@@ -11,18 +11,17 @@ assign points to centers $\rightarrow$ relocate centers
 \begin{itemize}
     \item Risk function monotonically decreasing
     \item Converges to local minimum
-    \item Cost per iteration: $\mathcal{O}(n*k*d)$\\
-    With n points, k clusters and dim d
+    \item Cost per iteration: $\mathcal{O}(n*k*d)$, (k clusters)
     \item Can use kernels for random shapes
-    \item \color{Red}Strongly depends on initialization, Local convergence, How many clusters?\color{black}
+    \item \color{Red}Depends on init, Local convergence, Choice of k?\color{black}
 \end{itemize}
-\textbf{K++ seeding}: Set one center $\mu_1 \rightarrow$ ad centers 2-k randomly with furthest datapoint from current clusters having highest prob. of becoming next center
+\textbf{K++ seeding}: Set one center $\mu_1 \rightarrow$, centers 2-k:
 
 \begin{center}
     $\mu_j^{(0)} := x_i$ with prob. $\underset{l=1,..,j-1}{min}||x_i - \mu_l^{(0)}||^2$
 \end{center}
 
-Can be shown that expected loss is $\mathcal(O)(logk)$ times that of opt. k-means solution
+Expected loss is $\mathcal(O)(logk)$ times that of opt. k-means sol.
 
 \textbf{Note:} finding optimal k is difficult. Can use heuristics
 

@@ -3,10 +3,10 @@
 Potential reasons:
 \begin{itemize}
     \item $||\delta^{(i)}|| \rightarrow 0 | \infty$ or $||v^{(i)}|| \rightarrow 0 | \infty$
-    \item Certain act. fct. like e.g. Relu (no saturation) can help avoid $\delta \rightarrow 0$
+    \item Relu (no saturation) can help avoid $\delta \rightarrow 0$
     \item Note $\delta$ only depends on $\varphi'$ while v depends on $\varphi$
-    \item Helps to standardize input and / or use batch normalization
-    \item Weight initialization matters as weight opt. is generally a non-convex problem
+    \item Use standardized input and / or batch normalization
+    \item Weight init. matters as weight opt. is gen. non-convex
 \end{itemize}
 
 

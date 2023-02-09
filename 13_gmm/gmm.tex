@@ -1,13 +1,9 @@
 \begin{center}
     $P(\boldsymbol{x}|\theta) = P(\boldsymbol{x}|\mu, \Sigma, \pi) = \sum_{j=1}^k \pi_j \mathcal{N}(\boldsymbol{x};\mu_j,\Sigma_j)$
 \end{center}
-Note that GMMs are the same as GBC with unknown labels
+GMMs are the same as GBC with unknown labels
 
 MLE:
-\begin{center}
-    $(\pi_{1:k}^*,\mu_{1:k}^*,\Sigma_{1:k}^*) = \underbrace{\text{argmin}-\sum_{i=1}^n log \sum_{j=1}^k \pi_j \mathcal{N}(\boldsymbol{x};\mu_j,\Sigma_j)}_{\text{Intractable}}$
-
-    Can try SGD though but normally EM:
-\end{center}
+$(\pi_{1:k}^*,\mu_{1:k}^*,\Sigma_{1:k}^*) = \underbrace{\text{argmin}-\sum_{i=1}^n log \sum_{j=1}^k \pi_j \mathcal{N}(\boldsymbol{x};\mu_j,\Sigma_j)}_{\text{Intractable}}$
 
 \input{13_gmm/13.1_EM.tex}

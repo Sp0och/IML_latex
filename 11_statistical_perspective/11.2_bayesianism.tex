@@ -8,18 +8,11 @@ Maximum Aposteriori Estimate (MAP):
     \\ for $\theta \sim \mathcal{N}(0,\sigma^2\mathcal{I})$ MAP yields ridge regr.
 \end{center}
 
-Can easily change priors e.g. laplacian prior $\Rightarrow$ lasso OLS %TODO what are the params
-
-Gaussian yields very low prob. for values far from mean
+%lasso OLS TODO what are the params
 
 laplacian: $p(x;\mu,b) = \frac{1}{2b}exp(-\frac{|x-\mu|}{b})$
-
-student-t: allows more slack for furthe away values.
-
-\textbf{General MAP procedure:} 
 \begin{itemize}
-    \item Choose likelihood fct. according to problem
-    \item Choose prior for parameters
+    \item Choose prior \& likelihood fct. according to problem
     \item Optimize MAP parameters
     \item Choose hyperparameters through CV
     \item Make predictions using Bayesian decision

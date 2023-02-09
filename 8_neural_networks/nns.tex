@@ -1,16 +1,16 @@
 NNs allow us to choose the feature maps in the model itself
 
-\begin{center}
-    \resizebox{0.6\linewidth}{!}{
-    \includegraphics{images/NN.png}
-    }
-\end{center}
+% \begin{center}
+%     \resizebox{0.6\linewidth}{!}{
+%     \includegraphics{images/NN.png}
+%     }
+% \end{center}
 
 \begin{center}
     $z_1^{(1)} = \sum_{j=1}^d\omega_{1,j}^{(1)}x_j + \omega_{1,0}^{(1)}$\\
     $z_k^{(l)} = \sum_{j=1}^{n_{l-1}}\omega_{k,j}^{(l)}v_{j}^{(l-1)} + \omega_{k,j}^{(l)}$ \hspace{0.2cm} $v_l = \varphi(z_l)$
 \end{center}
-for $l = 1,..,L$ the number of layers
+% for $l = 1,..,L$ the number of layers
 
 Vector notation:
 \begin{center}
@@ -19,7 +19,7 @@ Vector notation:
     where $\boldsymbol{v}^{(l)} = \left[\varphi(\boldsymbol{z}^{(l)};1)\right]$ $\varphi$ applied comp. wise
 \end{center}
 
-$\rightarrow$ optimize weights w.r.t. loss function (squared loss, cross-entropy etc.)
+$\rightarrow$ optimize weights w.r.t. loss fct (squared loss, CE etc.)
 
 \begin{center}
     $l(\boldsymbol{W};\boldsymbol{x},y)= \sum_{i=1}^nl_i(\boldsymbol{W};\boldsymbol{x}_i,y_i)$

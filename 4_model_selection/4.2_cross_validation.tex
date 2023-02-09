@@ -1,8 +1,5 @@
 \subsection{Cross Validation}
 
-To estimate gen. error $\Rightarrow$ train and test data. Usual splits are 50/50 and 80/20 (more often 80/20 because data is scarce)
-
-To choose hyperparameters (e.g. regularization param $\lambda$ or what choice of nonlinear features $\phi(x)$) we perform k-fold cross validation:
 Split training data into k batches
 \begin{enumerate}
     \item For each option of hyperparameter:
@@ -18,8 +15,8 @@ Split training data into k batches
 
 Leave one out CV (LOOCV): 
 \begin{itemize}
-    \item Split training data into sets of one $\Rightarrow$ validation batch is of size 1
+    \item Batch size 1
     \item Results in best model approximation
-    \item Validation error is pretty bad (only one sample) but avg. ok
+    \item Validation error bad (only one sample) but avg. ok
     \item Computationally expensive 
 \end{itemize}
